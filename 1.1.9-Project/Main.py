@@ -1,5 +1,7 @@
 import turtle as trtl
 wn = trtl.Screen()
+
+
 # Setup Varibles and Make them easier to edit
 
 creator = trtl.Turtle()
@@ -27,6 +29,7 @@ def reset1():
     creator.shapesize(0.2)
     creator.pensize(1)
     creator.penup()
+    print("Creator Reset Made")
 
 
 # Make Background a color 
@@ -36,12 +39,12 @@ creator.shapesize(90)
 creator.shape("circle")
 creator.color(bg_color)
 creator.stamp()
-
+print("Background Made")
 # Adding TIttle Text
 reset1()
 creator.goto(-350,300)
 creator.write("The Yogurt Shop", font=("Impact", "80", "normal"))
-
+print("Tittle Text made")
 
 # Adding Black RIm to Bowl
 reset1()
@@ -50,7 +53,7 @@ creator.goto(0, 0,)
 creator.pencolor("black")
 creator.pendown()
 creator.circle(bowl_size)
-
+print("Bowl Rim Made")
 # Draw Bowl
 reset1()
 creator.pensize(500)
@@ -58,7 +61,7 @@ creator.goto(0, 0,)
 creator.pencolor(bowl_color)
 creator.pendown()
 creator.circle(bowl_size)
-
+print("Bowl Rim Made")
 # Add yogurt
 reset1()
 creator.pensize(400)
@@ -66,9 +69,9 @@ creator.goto(0, 0,)
 creator.pencolor(yougurt_color)
 creator.pendown()
 creator.circle(8)
-
+print("Yogurt Made")
 # Add First topping
-banana = "y"    # input("Banana? (y/n):  ")
+banana = input("Banana? (y/n):  ")
 wn.register_shape('BaNANANN.gif')
 if banana == "y":
     reset1()
@@ -77,11 +80,12 @@ if banana == "y":
     creator.shape(banana_shape)
     creator.shapesize(bannaa_size)
     creator.stamp()
-
+elif banana == "n":
+        print("Moving on!")
 
 # Add Second Topping 
     
-strawberry = "y"  
+strawberry = input("Strawberry? (y/n):  ")
 wn.register_shape('strawberry.gif')
 if strawberry == "y":
     reset1()
