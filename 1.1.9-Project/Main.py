@@ -7,9 +7,9 @@ bg_color = "#3289a8"
 bowl_color = "white"
 yougurt_color = "pink"
 bowl_size = 10
-banana_pos1 = (10, 10)
+banana_pos1 = (-150, 10)
 banana_shape = "BaNANANN.gif"
-bannaa_
+bannaa_size = 0.5
 
 
 # Def Reset
@@ -20,6 +20,7 @@ def reset1():
     creator.pensize(1)
     creator.penup()
 
+
 # Make Background a color 
     
 creator.goto(0,0)
@@ -27,6 +28,20 @@ creator.shapesize(90)
 creator.shape("circle")
 creator.color(bg_color)
 creator.stamp()
+
+# Adding TIttle Text
+reset1()
+creator.goto(-350,300)
+creator.write("The Yogurt Shop", font=("Impact", "80", "normal"))
+
+
+# Adding Black RIm to Bowl
+reset1()
+creator.pensize(505)
+creator.goto(0, 0,)
+creator.pencolor("black")
+creator.pendown()
+creator.circle(bowl_size)
 
 # Draw Bowl
 reset1()
@@ -44,20 +59,17 @@ creator.pencolor(yougurt_color)
 creator.pendown()
 creator.circle(8)
 
-# Adding TIttle Text
-reset1()
-creator.goto(-400,300)
-creator.write("The Yogurt Shop", font=("Arial", "80", "normal"))
+
 
 # Add First topping
-banana = input("Banana? (y/n)")
+banana = "y"    # input("Banana? (y/n):  ")
 wn.register_shape('BaNANANN.gif')
 if banana == "y":
-    reset1
+    reset1()
     creator.goto(banana_pos1)
     creator.pendown()
     creator.shape(banana_shape)
-    creator.shapesize(1)
+    creator.shapesize(bannaa_size)
     creator.stamp()
 
 
