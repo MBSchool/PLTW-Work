@@ -7,10 +7,18 @@ bg_color = "#3289a8"
 bowl_color = "white"
 yougurt_color = "pink"
 bowl_size = 10
+
+# Adding Topping variables
+
+# Banna
 banana_pos1 = (-150, 10)
 banana_shape = "BaNANANN.gif"
 bannaa_size = 0.5
 
+#strawberry
+strawberry_pos1 = (100, 30)
+strawberry_shape= "strawberry.gif"
+strawberry_size = 0.5
 
 # Def Reset
 
@@ -59,8 +67,6 @@ creator.pencolor(yougurt_color)
 creator.pendown()
 creator.circle(8)
 
-
-
 # Add First topping
 banana = "y"    # input("Banana? (y/n):  ")
 wn.register_shape('BaNANANN.gif')
@@ -72,6 +78,18 @@ if banana == "y":
     creator.shapesize(bannaa_size)
     creator.stamp()
 
+
+# Add Second Topping 
+    
+strawberry = "y"  
+wn.register_shape('strawberry.gif')
+if strawberry == "y":
+    reset1()
+    creator.goto(strawberry_pos1)
+    creator.pendown()
+    creator.shape(strawberry_shape)
+    creator.shapesize(strawberry_size)
+    creator.stamp()
 
 #  Looping Screen
     
