@@ -23,7 +23,7 @@ for s in turtle_shapes:
   ht.goto(-350, tloc) # to (-350.50)
   ht.setheading(0) # Reset heading
 
-  vt = trtl.Turtle(shape=s)
+  vt = trtl.Turtle(shape=s) 
   vert_turtles.append(vt)
   vt.penup()
   new_color = vert_colors.pop()
@@ -34,10 +34,30 @@ for s in turtle_shapes:
   tloc += 50
 
 # TODO: move turtles across and down screen, stopping for collisions
-"""
-for step in range(50):
-	# do something
-"""
+
+###### code segment #####
+for ht in horiz_turtles:
+for vt in vert_turtles:
+  
+
+  
+###### code segment #####
+ if (abs(ht.xcor() - vt.xcor()) < 20):
+ if (abs(ht.ycor() - vt.ycor()) < 20):
+
+
+###### code segment #####
+ht.forward(3)
+vt.forward(3)
+
+
+
+###### code segment #####
+vert_turtles.remove(vt)
+horiz_turtles.remove(ht) 
+
+
+
 
 wn = trtl.Screen()
 wn.mainloop()
