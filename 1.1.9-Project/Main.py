@@ -5,6 +5,7 @@ wn = trtl.Screen()
 
 creator = trtl.Turtle()
 bg_color = "#3289a8"
+bg_shape = "shop.gif"
 bowl_color = "white"
 yougurt_color = "pink"
 bowl_size = 10
@@ -26,12 +27,24 @@ strawberry_size = 0.5
 def reset1():
     creator.color("black")
     creator.shapesize(0.2)
+    creator.shape("arrow")
     creator.pensize(1)
     creator.penup()
     print("Creator Reset Made")
 
+# Adding a background image
+    
+wn.register_shape('shop.gif')
 
-# Make Background a color 
+reset1()
+creator.goto(0,0)
+creator.pendown()
+creator.shape(bg_shape)
+creator.shapesize(100)
+creator.stamp()
+reset1()
+
+'''# Make Background a color 
     
 creator.goto(0,0)
 creator.shapesize(90)
@@ -39,7 +52,7 @@ creator.shape("circle")
 creator.color(bg_color)
 creator.stamp()
 print("Background Made")
-
+'''
 # Adding TIttle Text
 
 reset1()
