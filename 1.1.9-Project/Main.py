@@ -4,7 +4,7 @@ wn = trtl.Screen()
 # Setup Varibles and Make them easier to edit
 
 creator = trtl.Turtle()
-wn.setup(1000, 900)
+wn.setup(1000, 900)  # Makes Window set height
 creator.speed(10000)
 bg_color = "#3289a8"
 bg_shape = "shop.gif"
@@ -22,7 +22,7 @@ bannaa_size = 0.5
 #strawberry
 strawberry_pos1 = (0, 0)
 strawberry_shape= "strawberry.gif"
-strawberry_size = 0.5
+strawberry_size = 0.1
 
 # Def Reset
 
