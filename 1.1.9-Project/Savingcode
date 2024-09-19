@@ -1,0 +1,12 @@
+'''# Make Background a color
+   
+creator.goto(0,0)
+creator.shapesize(90)
+creator.shape("circle")
+creator.color(bg_color)
+creator.stamp()
+print("Background Made")
+'''
+
+
+
