@@ -1,7 +1,6 @@
 import turtle as trtl
 wn = trtl.Screen()
 
-
 # Setup Varibles and Make them easier to edit
 
 creator = trtl.Turtle()
@@ -40,13 +39,16 @@ creator.shape("circle")
 creator.color(bg_color)
 creator.stamp()
 print("Background Made")
+
 # Adding TIttle Text
+
 reset1()
 creator.goto(-350,300)
 creator.write("The Yogurt Shop", font=("Impact", "80", "normal"))
 print("Tittle Text made")
 
 # Adding Black RIm to Bowl
+
 reset1()
 creator.pensize(505)
 creator.goto(0, 0,)
@@ -55,6 +57,7 @@ creator.pendown()
 creator.circle(bowl_size)
 print("Bowl Rim Made")
 # Draw Bowl
+
 reset1()
 creator.pensize(500)
 creator.goto(0, 0,)
@@ -63,6 +66,7 @@ creator.pendown()
 creator.circle(bowl_size)
 print("Bowl Rim Made")
 # Add yogurt
+
 reset1()
 creator.pensize(400)
 creator.goto(0, 0,)
@@ -71,6 +75,7 @@ creator.pendown()
 creator.circle(8)
 print("Yogurt Made")
 # Add First topping
+
 banana = input("Banana? (y/n):  ")
 wn.register_shape('BaNANANN.gif')
 if banana == "y":
