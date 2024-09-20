@@ -26,6 +26,20 @@ strawberry_size = 0.1
 
 # Def Reset
 
+
+def banna():
+    creator.pendown()
+    creator.shape(banana_shape)
+    creator.shapesize(bannaa_size)
+    creator.stamp()
+
+def strawberry():
+    creator.pendown()
+    creator.shape(strawberry_shape)
+    creator.shapesize(strawberry_size)
+    creator.stamp()
+
+
 def reset1():
     creator.color("black")
     creator.shapesize(0.2)
@@ -94,13 +108,9 @@ banana = input("Banana? (y/n):  ")
 wn.register_shape('BaNANANN.gif')
 if banana == "y":
     reset1()
-    creator.goto(banana_pos1)
-    creator.pendown()
-    creator.shape(banana_shape)
-    creator.shapesize(bannaa_size)
-    creator.stamp()
-elif banana == "n":
-        print("Moving on!")
+    
+else:
+    print("Moving on!")
 
 # Add Second Topping 
     
@@ -108,11 +118,7 @@ strawberry = input("Strawberry? (y/n):  ")
 wn.register_shape('strawberry.gif')
 if strawberry == "y":
     reset1()
-    creator.goto(strawberry_pos1)
-    creator.pendown()
-    creator.shape(strawberry_shape)
-    creator.shapesize(strawberry_size)
-    creator.stamp()
+    
 
 #  Looping Screen
     
