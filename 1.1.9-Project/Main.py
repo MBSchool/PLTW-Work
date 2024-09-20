@@ -16,6 +16,11 @@ bowl_size = 10
 
 # Banna
 banana_pos1 = (-150, 10)
+banana_pos2 = (-150, 15)
+banana_pos3 = (-150, 20)
+banana_pos4 = (-150, 25)
+banana_pos5 = (-150, 30)
+
 banana_shape = "BaNANANN.gif"
 bannaa_size = 0.5
 
@@ -108,7 +113,10 @@ banana = input("Banana? (y/n):  ")
 wn.register_shape('BaNANANN.gif')
 if banana == "y":
     reset1()
-    
+    creator.goto()
+    banna()
+    creator.goto(banana_pos2)
+    banana
 else:
     print("Moving on!")
 
